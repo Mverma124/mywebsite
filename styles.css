@@ -1,0 +1,262 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FDF6F6; /* Light off-white background */
+    margin: 0;
+    padding: 0;
+}
+
+.section-container {
+    background: linear-gradient(to right, #e3f2fd, #ffffff);
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.social-links a {
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+.social-links a:hover {
+    transform: scale(1.1);
+}
+
+
+.profile-img {
+    width: 250px; /* Set the width to create a square */
+    height: 250px; /* Set the height to match the width */
+    margin-bottom: 20px;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #fefefe; /* Dark blue background */
+    margin-bottom: 30px;
+}
+
+.navbar-nav {
+    font-size: 18px;
+}
+
+.nav-link {
+    color: #FDF6F6 !important; /* White text */
+    padding: 10px 20px;
+}
+
+.nav-link:hover {
+    background-color: #C5001A; /* Red hover background */
+    color: #FDF6F6 !important; /* White text on hover */
+}
+
+.navbar-toggler {
+    border-color: #C5001A; /* Red for the toggle icon */
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+}
+
+/* Section Styles */
+.section-container {
+    padding: 60px 0;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #002C54; /* Dark blue for headings */
+}
+
+.text-center {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #002C54; /* Dark blue text */
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #C5001A; /* Red hover color */
+}
+
+/* Projects Section */
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+    background-color: #FDF6F6; /* Light off-white background */
+}
+
+.card-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #002C54; /* Dark blue for titles */
+}
+
+.card-text {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #002C54; /* Dark blue text */
+}
+
+.btn-primary {
+    background-color: #C5001A; /* Red button */
+    border-color: #C5001A;
+}
+
+.btn-primary:hover {
+    background-color: #002C54; /* Dark blue hover */
+    border-color: #002C54;
+    color: #fff; /* White text on hover */
+}
+
+.project-card-container {
+    margin-bottom: 30px;
+}
+
+/* Table Styling (Certifications Section) */
+.table {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.table th, .table td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 15px;
+}
+
+.table-bordered {
+    border: 1px solid #ddd;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.thead-light th {
+    background-color: #FDF6F6;
+    color: #002C54; /* Dark blue header text */
+}
+
+/* Ensure the Education section fits within the viewport without scrolling */
+#education {
+    padding: 30px;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+#education h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #002C54; /* Dark blue color */
+}
+
+/* About Me Section */
+#about-me {
+    padding: 30px;
+    background-color: #FDF6F6;
+}
+
+#about-me h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #002C54; /* Dark blue */
+}
+
+/* Education Section */
+#education .list-group-item {
+    color: #002C54; /* Dark blue text */
+}
+
+#education .list-group-item strong {
+    color: #C5001A; /* Red for strong text */
+}
+
+/* Ensure the Education and About Me sections fit within the viewport without scrolling */
+.list-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+}
+
+.list-group-item {
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #FDF6F6;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.list-group-item strong {
+    font-size: 18px;
+    color: #C5001A; /* Red for strong text */
+}
+
+/* For mobile responsiveness */
+@media (max-width: 768px) {
+    #education h2, #about-me h2 {
+        font-size: 28px;
+    }
+
+    .list-group-item {
+        padding: 10px;
+    }
+
+    .list-group-item strong {
+        font-size: 16px;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #002C54; /* Dark blue background */
+    color: #fff; /* White text */
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    .navbar-nav {
+        font-size: 16px;
+    }
+
+    .card-img-top {
+        height: 150px;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .section-container {
+        padding: 30px 0;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+}
