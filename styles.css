@@ -5,6 +5,36 @@ body {
     margin: 0;
     padding: 0;
 }
+/* General adjustments for smaller devices */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+
+    .section-container {
+        padding: 15px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    /* Adjust images */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Align text in cards for better readability */
+    .card-title, .card-text {
+        text-align: center;
+    }
+}
+
 
 .section-container {
     background: linear-gradient(to right, #e3f2fd, #ffffff);
